@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-image: url(/images/balloon4.jpeg);
+  background-image: url(/images/backgroundImg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -21,7 +21,7 @@ body {
 .icon::before {
   display: inline-block;
   font-style: normal;
-  font-variant: norma widthl;
+  font-variant: norma width;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font-size: 2.5rem;
@@ -201,7 +201,7 @@ img {
 
 .img_description1 {
   background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
-    url(/images/people2.jpeg);
+    url(/images/hotAirBalloonHover1.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -209,7 +209,7 @@ img {
 
 .img_description2 {
   background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
-    url(/images/people10.jpg);
+    url(/images/hotAirBalloonHover2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -217,7 +217,7 @@ img {
 
 .img_description3 {
   background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
-    url(/images/marryMe.jpg);
+    url(/images/hotAirBalloonHover3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
