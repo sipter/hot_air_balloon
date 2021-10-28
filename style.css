@@ -1,0 +1,305 @@
+html {
+  font-size: 62.5%;
+  --darkBlue: #073b4c;
+  --yellowGold: #ffd166;
+  --lightMagenta: #ef476f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(/images/balloon4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: norma widthl;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 2.5rem;
+}
+span {
+  color: var(--lightMagenta);
+}
+/* .login::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f007";
+} */
+
+nav ul li {
+  list-style-type: none;
+  display: inline;
+  margin: 10px;
+  font-weight: 900;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+a:hover,
+.icon:hover {
+  color: var(--yellowGold);
+}
+
+nav {
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: var(--darkBlue);
+}
+
+.icons,
+.navPages {
+  justify-self: center;
+  align-self: center;
+}
+
+/* css for inputs here */
+
+.firstName label,
+.firstName input,
+.lastName label,
+.lastName input {
+  display: block;
+}
+
+.booking label,
+.booking input,
+.email label,
+.email input {
+  display: block;
+}
+
+label {
+  font-size: 1.8rem;
+}
+
+.inputContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5% 1fr;
+  height: 70vh;
+}
+
+.inputItem {
+  display: grid;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+
+.booking input,
+.email input,
+.firstName input,
+.lastName input {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+input[type="datetime-local"] {
+  color: var(--yellowGold);
+}
+
+.email ::placeholder,
+.firstName ::placeholder,
+.lastName ::placeholder {
+  color: var(--yellowGold);
+  text-align: center;
+  font-weight: bold;
+}
+
+.email input,
+.firstName input,
+.lastName input {
+  height: 30px;
+  width: 23rem;
+  text-align: center;
+  color: white;
+}
+
+.firstName input,
+.lastName input {
+  text-transform: capitalize;
+}
+
+.firstName input:focus-within,
+.lastName input:focus-within {
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.email input:focus-within {
+  color: white;
+  text-align: center;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: var(--yellowGold);
+  border: 1px solid var(--darkBlue);
+}
+
+/* ---------- Images start here ---------- */
+
+img {
+  width: 200px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.balloons{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.balloons>*:nth-child(2){
+  align-items: flex-end;
+  align-self: flex-end;
+}
+
+.heart {
+  object-position: top;
+}
+
+.img_wrap1,
+.img_wrap2,
+.img_wrap3 {
+  position: relative;
+}
+
+.img_description1,
+.img_description2,
+.img_description3 {
+  width: 200px;
+  height: 180px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  visibility: hidden;
+  opacity: 1;
+  /* z-index: 0; */
+}
+
+.img_description1 {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
+    url(/images/people2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img_description2 {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
+    url(/images/people10.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img_description3 {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
+    url(/images/marryMe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img_wrap1:hover .img_description1,
+.img_wrap2:hover .img_description2,
+.img_wrap3:hover .img_description3 {
+  visibility: visible;
+}
+
+.img_description1,
+.img_description2,
+.img_description3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img_description1 p,
+.img_description2 p,
+.img_description3 p {
+  font-size: 1.6rem;
+}
+
+.img_description1 p span,
+.img_description2 p span,
+.img_description3 p span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--darkBlue);
+}
+
+.img_description1 button, .img_description2 button, .img_description3 button {
+    background-color:var(--darkBlue);
+    color: var(--yellowGold);
+    border: 4px solid var(--darkBlue);
+    width: 100px;
+}
+
+/* ---------- MEDIA QUERIES START HERE!! ---------- */
+@media (min-width: 555px) and (max-width: 767.98px){
+  .balloons{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .desktopContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "leftBalloons rightForm";
+  }
+  nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .navPages {
+    grid-column: 2/3;
+  }
+
+  .icons {
+    grid-column: 4/5;
+  }
+
+  .inputContainer {
+    grid-area: rightForm;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr 100px;
+  }
+
+  .inputItem{
+      grid-row: 2/3;
+  }
+
+  .balloons {
+    grid-area: leftBalloons;
+    margin-left: 20px;  
+  }
+}

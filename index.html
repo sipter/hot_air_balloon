@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <ul class="navPages">
+            <li> <a href="#">Contact</a></li>
+            <li> <a href="#">About</a></li>
+        </ul>
+
+        <ul class="icons">
+            <li> <a href="https://www.facebook.com/"><span class="fab icon fa-facebook-square"></span></a></li>
+            <li> <a href="https://www.instagram.com/"><span class="fab icon fa-instagram"></span></a></li>
+            <li> <a href="https://www.youtube.com/"><span class="fab icon fa-youtube"></span></a></li>
+        </ul>
+    </nav>
+
+    <div class="desktopContainer">
+        <form action="" class="inputContainer">
+            <div class="inputItem">
+                <div class="firstName">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="firstName" placeholder="Max" required>
+                </div>
+
+                <div class="lastName">
+                    <label for="name">Your surname</label>
+                    <input type="text" id="name" name="lastName" placeholder="Maximilian" required>
+                </div>
+
+                <div class="booking">
+                    <label for="booking-time">Book your next trip</label>
+                    <input type="datetime-local" id="booking-time" name="booking-time" value="2021-10-27T08:00" required>
+                </div>
+
+                <div class="email">
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                </div>
+                <button class="button">Book now!</button>
+            </div>
+        </form>
+        <div class="balloons">
+            <div class="img_wrap1">
+                <img src="/images/hotBallon2.jpeg" class="rainbow" alt="rainbow colored hot air balloon">
+                <div class="img_description1">
+                    <p>If you're looking for a unique date idea or to experience something different with your
+                        friend..this is what you're looking for!
+                    </p>
+                    <p>Duration: 1h</p>
+                    <p>Price: 200$</p>
+                    <p><span>(max. 2 people)</span></p>
+                    <button>Select</button>
+                </div>
+            </div>
+            <div class="img_wrap2">
+                <img src="/images/hotBallon3.jpg" class="colorful" alt="colorful hot air balloon">
+                <div class="img_description2">
+                    <p>If you've tried many activities with your friends and you don't know
+                        what else you can
+                        try..Surprise them with a hot air ballon tour!
+                    </p>
+                    <p>Duration: 2h</p>
+                    <p>Price: 400$</p>
+                    <p><span>(max. 10 people)</span></p>
+                    <button>Select</button>
+                </div>
+            </div>
+
+            <div class="img_wrap3">
+                <img src="/images/ballonred2.jpg" class="heart" alt="heart shaped hot air balloon">
+                <div class="img_description3">
+                    <p>If you want to proposal and a hot air balloon is your girlfriend's dream then you're in
+                        the right place!</p>
+                    <p>Duration: 3h</p>
+                    <p>Price: 600$</p>
+                    <p><span>(Champagne and balloons included)</span></p>
+                    <button>Select</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
